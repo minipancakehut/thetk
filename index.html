@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Tamale Kitchen - Homemade Tamales</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark-gray': '#4A4A4A',
+            'brand-gold': '#D1A768',
+            'brand-red': '#A42020',
+            'brand-light-bg': '#FDFBF5',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Oswald', 'sans-serif'],
+          }
+        }
+      }
+    }
+</script>
+<style>
+    .text-shadow-lg {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+</style>
+</head>
+<body class="bg-black text-gray-300 antialiased">
+
+<header id="header" class="bg-black/90 backdrop-blur-md shadow-md sticky top-0 z-50">
+<nav class="container mx-auto px-6 py-3">
+<div class="flex items-center justify-between">
+    <div class="flex-shrink-0">
+        <a href="#home" class="flex items-center">
+            <img src="thetk.png" alt="The Tamale Kitchen Logo" class="h-16">
+        </a>
+    </div>
+
+    <div class="hidden md:flex flex-grow justify-center items-center space-x-12">
+        <a href="#home" class="text-white hover:text-brand-red transition duration-300 font-semibold">Home</a>
+        <a href="#about" class="text-white hover:text-brand-red transition duration-300 font-semibold">Our Story</a>
+        <a href="#menu" class="text-white hover:text-brand-red transition duration-300 font-semibold">Menu</a>
+        <a href="#catering" class="text-white hover:text-brand-red transition duration-300 font-semibold">Catering</a>
+        <a href="#contact" class="text-white hover:text-brand-red transition duration-300 font-semibold">Contact</a>
+    </div>
+    <div class="flex-shrink-0">
+        <button id="mobile-menu-button" class="md:hidden">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+        <div class="hidden md:block" style="width: 64px;"></div>
+    </div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden mt-4">
+    <a href="#home" class="block py-2 px-4 text-sm text-white hover:bg-brand-gold/20 rounded">Home</a>
+    <a href="#about" class="block py-2 px-4 text-sm text-white hover:bg-brand-gold/20 rounded">Our Story</a>
+    <a href="#menu" class="block py-2 px-4 text-sm text-white hover:bg-brand-gold/20 rounded">Menu</a>
+    <a href="#catering" class="block py-2 px-4 text-sm text-white hover:bg-brand-gold/20 rounded">Catering</a>
+    <a href="#contact" class="block py-2 px-4 text-sm text-white hover:bg-brand-gold/20 rounded">Contact</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section id="home" class="relative h-screen flex items-center justify-center text-white text-center overflow-hidden bg-cover bg-center" style="background-image: url('thetk2.jpeg');">
+    <div class="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
+    <div class="relative z-20 p-8">
+        <h1 class="text-6xl md:text-8xl font-bold font-display uppercase tracking-wider text-shadow-lg">The Tamale Kitchen</h1>
+        <p class="text-xl md:text-2xl mt-4 font-sans font-light">Bringing You the Heart of Homemade Tamales</p>
+        <a href="#menu" class="mt-8 inline-block bg-brand-red text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-white hover:text-brand-red transition duration-300 transform hover:scale-105 shadow-lg">View Our Menu</a>
+    </div>
+</section>
+
+<section id="about" class="py-20 bg-black">
+<div class="container mx-auto px-6">
+    <h2 class="text-5xl font-bold text-center text-white mb-4 font-display uppercase">Our Story</h2>
+    <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
+        Welcome to The Tamale Kitchen, where generations of family tradition are wrapped in every corn husk. Our journey began in our grandmother's kitchen, with a passion for authentic flavors and the joy of sharing food made with love. We use cherished family recipes and the freshest ingredients to bring you the true taste of homemade tamales, from our heart to your home.
+    </p>
+
+    <h3 class="text-4xl font-bold text-center text-white mb-8 font-display uppercase">From Our Kitchen</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid gap-4">
+            <div><img class="h-auto max-w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" src="https://placehold.co/600x800/4A4A4A/FFFFFF?text=Family+Recipe" alt="Tamale making process"></div>
+            <div><img class="h-auto max-w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" src="https://placehold.co/600x600/D1A768/FFFFFF?text=Fresh+Masa" alt="Fresh ingredients for tamales"></div>
+        </div>
+        <div class="grid gap-4">
+            <div><img class="h-auto max-w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" src="https://placehold.co/600x600/A42020/FFFFFF?text=Rich+Salsa" alt="A pot of salsa for tamales"></div>
+            <div><img class="h-auto max-w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" src="https://placehold.co/600x800/4A4A4A/FFFFFF?text=Community+Event" alt="Serving tamales at an event"></div>
+        </div>
+        <div class="grid gap-4">
+            <div><img class="h-auto max-w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" src="https://placehold.co/600x800/D1A768/FFFFFF?text=Steaming+Hot" alt="Steaming tamales"></div>
+            <div><img class="h-auto max-w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" src="https://placehold.co/600x600/A42020/FFFFFF?text=Hand-Wrapped" alt="Hands wrapping a tamale"></div>
+        </div>
+        <div class="grid gap-4">
+            <div><img class="h-auto max-w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" src="https://placehold.co/600x600/4A4A4A/FFFFFF?text=Happy+Customers" alt="Happy customers enjoying tamales"></div>
+            <div><img class="h-auto max-w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" src="https://placehold.co/600x800/D1A768/FFFFFF?text=Perfectly+Plated" alt="Plated tamales ready to eat"></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="menu" class="py-20 bg-black">
+<div class="container mx-auto px-6">
+    <h2 class="text-5xl font-bold text-center text-white mb-4 font-display uppercase">Our Tamales</h2>
+    <p class="text-center text-gray-300 mb-12">Handcrafted daily using traditional recipes. Sold by the dozen.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+            <img src="https://placehold.co/600x400/A42020/FFFFFF?text=Pork+in+Red+Chile" alt="Pork Tamales" class="w-full h-56 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-white mb-2 font-display">Pork in Red Chile</h3>
+                <p class="text-gray-300 mb-4">Tender pork shoulder slow-cooked in a rich, savory red chile sauce, wrapped in our signature masa.</p>
+                <span class="text-xl font-bold text-brand-red">$24.00 / Dozen</span>
+            </div>
+        </div>
+        <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+            <img src="https://placehold.co/600x400/5A8B2B/FFFFFF?text=Chicken+in+Green+Chile" alt="Chicken Tamales" class="w-full h-56 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-white mb-2 font-display">Chicken in Green Chile</h3>
+                <p class="text-gray-300 mb-4">Juicy shredded chicken mixed with tangy tomatillos, green chiles, and cilantro for a bright, zesty flavor.</p>
+                <span class="text-xl font-bold text-brand-red">$24.00 / Dozen</span>
+            </div>
+        </div>
+        <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+            <img src="https://placehold.co/600x400/D1A768/FFFFFF?text=Cheese+and+Jalapeño" alt="Cheese and Jalapeño Tamales" class="w-full h-56 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-white mb-2 font-display">Cheese & Jalapeño</h3>
+                <p class="text-gray-300 mb-4">A delicious vegetarian option with melted Monterey Jack cheese and slices of spicy jalapeño.</p>
+                <span class="text-xl font-bold text-brand-red">$22.00 / Dozen</span>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="catering" class="py-20 bg-black">
+<div class="container mx-auto px-6">
+    <div class="text-center">
+        <h2 class="text-5xl font-bold text-center text-white mb-4 font-display uppercase">Catering</h2>
+        <p class="text-center text-gray-300 mb-12 max-w-2xl mx-auto">Bring the heart of The Tamale Kitchen to your next event! Perfect for parties, corporate gatherings, and family celebrations.</p>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-10 bg-gray-900 p-8 rounded-xl shadow-lg">
+        <div class="md:w-1/2">
+            <img src="https://placehold.co/800x600/4A4A4A/FFFFFF?text=Tamale+Catering" alt="Catering Setup" class="rounded-lg shadow-md w-full">
+        </div>
+        <div class="md:w-1/2">
+            <h3 class="text-3xl font-bold text-white mb-4 font-display">Let's Plan Your Fiesta!</h3>
+            <p class="text-gray-300 mb-6">Our tamales are a guaranteed crowd-pleaser. We provide everything you need for a delicious and memorable experience. Contact us today to get a custom quote for your event.</p>
+            <a href="#contact" class="inline-block bg-brand-red text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-white hover:text-brand-red transition duration-300 transform hover:scale-105 shadow-lg">Inquire Now</a>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="contact" class="py-20 bg-black">
+<div class="container mx-auto px-6">
+    <h2 class="text-5xl font-bold text-center text-white mb-12 font-display uppercase">Get In Touch</h2>
+    <div class="flex flex-col lg:flex-row gap-10">
+        <div class="lg:w-1/2 bg-gray-900 p-8 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold text-white mb-6 font-display">Send us a Message</h3>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-300 font-semibold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-600 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-300 font-semibold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-600 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-300 font-semibold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-600 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-brand-red text-white font-bold py-3 px-6 rounded-full hover:bg-white hover:text-brand-red transition duration-300 shadow-lg">Send Message</button>
+            </form>
+        </div>
+        <div class="lg:w-1/2">
+            <div class="bg-gray-900 p-8 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-white mb-4 font-display">Our Kitchen</h3>
+                <p class="text-gray-300 mb-2"><strong>Location:</strong> 123 Masa Avenue, Houston, TX</p>
+                <p class="text-gray-300 mb-2"><strong>Phone:</strong> (281) TAM-ALES</p>
+                <p class="text-gray-300"><strong>Hours:</strong> Pre-orders & Catering Only</p>
+            </div>
+            <div class="rounded-lg shadow-md overflow-hidden h-80">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221748.2325983701!2d-95.66554308709873!3d29.73693242953251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca62e0fa6915135a!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1680000000000"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+
+<footer class="bg-black text-white py-8">
+<div class="container mx-auto px-6 text-center">
+    <a href="#home" class="flex items-center justify-center mb-4">
+        <img src="thetk.png" alt="The Tamale Kitchen Logo" class="h-16">
+    </a>
+    <div class="flex justify-center flex-wrap space-x-6 mb-4">
+        <a href="#home" class="hover:text-brand-gold transition">Home</a>
+        <a href="#about" class="hover:text-brand-gold transition">Our Story</a>
+        <a href="#menu" class="hover:text-brand-gold transition">Menu</a>
+        <a href="#catering" class="hover:text-brand-gold transition">Catering</a>
+        <a href="#contact" class="hover:text-brand-gold transition">Contact</a>
+    </div>
+    <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand-gold transition">
+            <span class="sr-only">Instagram</span>
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.258.058 2.13.24 2.887.546.774.307 1.44.73 2.067 1.356s.95 1.294 1.257 2.067c.306.757.488 1.63.546 2.887.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.058 1.258-.24 2.13-.546 2.887-.307.774-.73 1.44-1.356 2.067s-1.294.95-2.067 1.257c-.757.306-1.63.488-2.887.546-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.258-.058-2.13-.24-2.887-.546-.774-.307-1.44-.73-2.067-1.356s-.95-1.294-1.257-2.067c-.306-.757-.488-1.63-.546-2.887-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.058-1.258.24-2.13.546-2.887.307.774.73 1.44 1.356 2.067s1.294.95 2.067 1.257c.757.306 1.63.488 2.887.546 1.266.058 1.646.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.28.058-2.16.242-2.924.545-.78.31-1.448.74-2.09 1.383-.64.643-1.074 1.31-1.383 2.09-.303.765-.487 1.644-.545 2.924-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.058 1.28.242 2.16.545 2.924.31.78.74 1.448 1.383 2.09.643.64 1.31 1.074 2.09 1.383.765.303 1.644.487 2.924.545 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.28-.058 2.16-.242 2.924-.545.78-.31 1.448-.74 2.09-1.383.64-.643-1.074-1.31-1.383-2.09.303-.765-.487-1.644-.545-2.924.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.058-1.28-.242-2.16-.545-2.924-.31-.78-.74-1.448-1.383-2.09-.643-.64-1.31-1.074-2.09-1.383-.765-.303-1.644-.487-2.924-.545-1.28-.058-1.688-.072-4.947-.072z"></path><path d="M12 6.845c-2.836 0-5.155 2.318-5.155 5.155s2.318 5.155 5.155 5.155 5.155-2.318 5.155-5.155-2.318-5.155-5.155-5.155zm0 8.31c-1.745 0-3.155-1.41-3.155-3.155s1.41-3.155 3.155-3.155 3.155 1.41 3.155 3.155-1.41 3.155-3.155 3.155zm5.16-8.82c-.54 0-.98.44-.98.98s.44.98.98.98.98-.44.98-.98-.44-.98-.98-.98z"></path></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand-gold transition">
+            <span class="sr-only">Facebook</span>
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33V21.878A10.001 10.001 0 0022 12z" clip-rule="evenodd" /></svg>
+        </a>
+    </div>
+    <p>© 2025 The Tamale Kitchen. All Rights Reserved.</p>
+</div>
+</footer>
+
+<script>
+// JavaScript for mobile menu toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+// Close mobile menu when a link is clicked
+const mobileNavLinks = mobileMenu.getElementsByTagName('a');
+for (let link of mobileNavLinks) {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+}
+</script>
+
+</body>
+</html>
